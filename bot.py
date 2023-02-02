@@ -1,8 +1,6 @@
-import time
 import tweepy
 from tweepy import OAuthHandler
 import os
-import datetime
 import random
 import subprocess
 
