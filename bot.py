@@ -20,13 +20,6 @@ def get_length(input_video):
     result = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'default=noprint_wrappers=1:nokey=1', input_video], stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     return float(result.stdout)
 
-def convert(sec):
-    return "{:0>8}".format(str(datetime.timedelta(seconds=round(sec))))    
-
-def get_sec(time_str):
-    h, m, s = time_str.split(':')
-    return int(h) * 3600 + int(m) * 60 + int(s)
-
 def nombreSubtitulos(filename):
     nombreSinFormato = (filename.split('.')[0]).split('/')[-1]
     subtitleFolder = 'subtitulos/'
@@ -47,7 +40,7 @@ def post_frame():
 
     media = api.media_upload('captura.png')
 
-    api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
+    #api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
 
     os.remove('captura.png') #remove screenshot
 
