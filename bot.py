@@ -39,8 +39,7 @@ def post_frame():
     path = 'capitulos/'
 
     files = os.listdir(path)
-    index = random.randrange(0, len(files)) #select random episode from folder
-    path_new = path +str(files[index])#get video path
+    path_new = path +str(files[0])
 
     duracion = get_length(path_new)
 
@@ -48,11 +47,11 @@ def post_frame():
 
     generate_thumbnail(path_new, 'captura.png', frame_seq) #generate screenshot
 
-    media = api.media_upload('captura.png')#, tweetText)  also can post text
+    media = api.media_upload('captura.png')
 
-    #api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
+    api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
 
-    os.remove('captura.png') #then, after its posted, the algorithm removes it to avoid unnecessary memory use.
+    os.remove('captura.png') #remove screenshot
 
 print("Twitteando captura...")
 post_frame()
