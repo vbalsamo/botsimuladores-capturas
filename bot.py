@@ -50,7 +50,7 @@ def post_frame():
 
     media = api.media_upload('captura.png')#, tweetText)  also can post text
 
-    #api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
+    api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
 
     os.remove('captura.png') #then, after its posted, the algorithm removes it to avoid unnecessary memory use.
 
