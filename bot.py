@@ -40,7 +40,7 @@ def post_frame():
 
     media = api.media_upload('captura.png')
 
-    #api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
+    api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
 
     os.remove('captura.png') #remove screenshot
 
