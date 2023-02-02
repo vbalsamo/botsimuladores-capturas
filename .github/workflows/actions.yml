@@ -1,0 +1,66 @@
+name: run main.py
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v2 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9' # install the python version needed
+          
+      - name: Setup FFmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v2
+
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install opencv-python
+                  
+      - name: crear carpeta capitulos
+        run: mkdir capitulos
+        
+      - name: descargar capitulo
+        run: python descargar_capitulo.py
+      
+      - name: ejecutar bot
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
+          API_KEY: ${{ secrets.API_KEY }}
+          API_KEY_SECRET: ${{ secrets.API_KEY_SECRET }}
+          LINK_C1: ${{ secrets.LINK_C1 }}
+          LINK_C2: ${{ secrets.LINK_C2 }}
+          LINK_C3: ${{ secrets.LINK_C3 }}
+          LINK_C4: ${{ secrets.LINK_C4 }}
+          LINK_C5: ${{ secrets.LINK_C5 }}
+          LINK_C6: ${{ secrets.LINK_C6 }}
+          LINK_C7: ${{ secrets.LINK_C7 }}
+          LINK_C8: ${{ secrets.LINK_C8 }}
+          LINK_C9: ${{ secrets.LINK_C9 }}
+          LINK_C10: ${{ secrets.LINK_C10 }}
+          LINK_C11: ${{ secrets.LINK_C11 }}
+          LINK_C12: ${{ secrets.LINK_C12 }}
+          LINK_C13: ${{ secrets.LINK_C13 }}
+          LINK_C14: ${{ secrets.LINK_C14 }}
+          LINK_C15: ${{ secrets.LINK_C15 }}
+          LINK_C16: ${{ secrets.LINK_C16 }}
+          LINK_C17: ${{ secrets.LINK_C17 }}
+          LINK_C18: ${{ secrets.LINK_C18 }}
+          LINK_C19: ${{ secrets.LINK_C19 }}
+          LINK_C20: ${{ secrets.LINK_C20 }}
+          LINK_C21: ${{ secrets.LINK_C21 }}
+          LINK_C22: ${{ secrets.LINK_C22 }}
+          LINK_C23: ${{ secrets.LINK_C23 }}
+          LINK_C24: ${{ secrets.LINK_C24 }}
+        run: python bot.py
+      
+      - name: eliminar carpeta capitulos
+        run: rm -rf capitulos
