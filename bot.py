@@ -41,12 +41,15 @@ def post_frame():
 
     captura = ''
 
-    if(random.randint(1,2) ==1):
-        captura = 'captura.png'
-        generate_thumbnail(path_new, captura, duracion)
-    else:
-        captura = 'captura.gif'
-        generate_gif(path_new, captura, duracion)
+    # if(random.randint(1,2) ==1):
+    #     captura = 'captura.png'
+    #     generate_thumbnail(path_new, captura, duracion)
+    # else:
+    #     captura = 'captura.gif'
+    #     generate_gif(path_new, captura, duracion)
+
+    captura = 'captura.png'
+    generate_thumbnail(path_new, captura, duracion)
 
     media = api.media_upload(captura)
 
