@@ -4,7 +4,7 @@
 
 2
 00:00:02,492 --> 00:00:04,203
-[nombre - artista]
+[música]
 
 3
 00:00:11,500 --> 00:00:12,680
@@ -184,7 +184,7 @@ un café irlandés bien cargado con canela.
 
 43
 00:03:56,031 --> 00:03:57,750
-[nombre - artista]
+[música]
 
 44
 00:03:59,297 --> 00:04:01,945
@@ -410,7 +410,7 @@ Sé buena. Manejá vos.
 
 95
 00:06:04,197 --> 00:06:06,018
-[nombre - artista]
+[música]
 
 96
 00:06:18,246 --> 00:06:20,824
@@ -638,7 +638,7 @@ Te ganás el cielo seguro vos, Milazzo.
 146
 00:09:26,435 --> 00:09:28,013
 [máquina de escribir]
-[nombre - artista]
+[música]
 
 147
 00:09:28,115 --> 00:09:29,255
@@ -700,7 +700,7 @@ que mató al comisario de Flores.
 
 160
 00:10:05,585 --> 00:10:07,077
-[nombre - artista]
+[música]
 
 161
 00:10:20,266 --> 00:10:22,454
@@ -837,7 +837,7 @@ No, ¿por qué?
 191
 00:11:54,234 --> 00:11:57,461
 Quería ofrecerle algo.
-[nombre - artista]
+[música]
 
 192
 00:11:58,039 --> 00:12:01,133
@@ -1097,7 +1097,7 @@ Pedime un café irlandés con…
 
 249
 00:14:42,720 --> 00:14:44,564
-[nombre - artista]
+[música]
 
 250
 00:14:58,361 --> 00:14:59,579
@@ -1416,7 +1416,7 @@ para facilitar la salida</i>
 
 322
 00:18:44,505 --> 00:18:46,434
-[nombre - artista]
+[música]
 
 323
 00:19:16,700 --> 00:19:18,278
@@ -1472,7 +1472,7 @@ Se me metió en el baño de un restorán.
 
 335
 00:19:58,739 --> 00:20:01,082
-[nombre - artista]
+[música]
 ¿Y sabe por qué lo persigue?
 
 336
@@ -1634,7 +1634,7 @@ Bien, voy para allá.
 
 373
 00:22:49,839 --> 00:22:51,355
-[nombre - artista]
+[música]
 
 374
 00:22:55,823 --> 00:22:58,792
@@ -1661,7 +1661,7 @@ poco las entradas de la frente.
 
 379
 00:23:14,885 --> 00:23:16,822
-[nombre - artista]
+[música]
 
 380
 00:23:18,698 --> 00:23:19,878
@@ -1862,7 +1862,7 @@ pero todavía no le puedo dar la cifra.
 424
 00:25:25,575 --> 00:25:26,809
 Caramba.
-[nombre -  artista]
+[música]
 
 425
 00:25:26,918 --> 00:25:31,129
@@ -1876,7 +1876,7 @@ por la admiración que le tengo.
 
 427
 00:25:34,333 --> 00:25:36,036
-[nombre - artista]
+[música]
 
 428
 00:25:36,044 --> 00:25:39,044
@@ -2166,7 +2166,7 @@ no nos pongamos melosos, por favor.
 00:29:22,756 --> 00:29:25,755
 Después de la conferencia de Horvat,
 Charbone
-[nombre -  artista]
+[música]
 
 491
 00:29:25,959 --> 00:29:27,865
@@ -2360,7 +2360,7 @@ concierto de Charbone]
 
 535
 00:32:44,656 --> 00:32:46,117
-[nombre - artista]
+[música]
 
 536
 00:32:55,383 --> 00:32:58,945
@@ -2976,7 +2976,7 @@ de la manada en ese minuto.
 
 673
 00:40:08,055 --> 00:40:09,696
-[nombre - artista]
+[música]
 
 674
 00:40:09,938 --> 00:40:14,109
@@ -3373,7 +3373,7 @@ en la Península del Labrador.
 
 762
 00:44:59,122 --> 00:45:00,989
-[nombre -  artista]
+[música]
 
 763
 00:45:06,208 --> 00:45:07,349
@@ -3385,7 +3385,7 @@ en la Península del Labrador.
 
 765
 00:45:19,022 --> 00:45:20,593
-[nombre - artista]
+[música]
 
 766
 00:45:26,368 --> 00:45:27,446
@@ -3920,7 +3920,7 @@ HTE Central, ¿me copia?
 
 883
 00:51:29,617 --> 00:51:31,507
-[nombre - artista]
+[música]
 
 884
 00:51:32,507 --> 00:51:33,593
@@ -3988,7 +3988,7 @@ Algo parecido, sí.
 
 899
 00:52:09,578 --> 00:52:11,038
-[nombre - artista]
+[música]
 
 900
 00:52:11,226 --> 00:52:12,148
@@ -4081,7 +4081,7 @@ No.
 
 919
 00:53:14,506 --> 00:53:16,303
-[nombre - artista]
+[música]
 
 920
 00:53:16,741 --> 00:53:19,647
@@ -4298,8 +4298,8 @@ Tiritititiritiri.
 
 968
 00:56:19,528 --> 00:56:21,965
-[nombre - artista]
+[música]
 
 969
 00:56:39,067 --> 00:56:40,770
-[nombre -  artista]
+[música]
