@@ -1,6 +1,7 @@
 import os
 import random
 import subprocess
+from ia import is_face, is_profile_face
 
 def generate_thumbnail(in_filename, out_filename, duracion):
     timess = random.uniform(1, duracion)
@@ -23,9 +24,19 @@ def nombreSubtitulos(filename):
     return subtitlePath
 
 def generar_aleatorio(path_new, duracion):
-    if(random.randint(1,2) ==1):
+    i = random.randint(1,6)
+    if i == 1:
         generate_thumbnail(path_new, 'captura.png', duracion)
         return 'captura.png'
-    else:
+    elif i == 2 or i == 3:
         generate_gif(path_new, 'captura.gif', duracion)
         return 'captura.gif'
+    elif i == 4 or i == 5 or i == 6:
+        captura = 'captura.png'
+        while 1:
+            generate_thumbnail(path_new, captura, duracion)
+            if(is_face(captura) or is_profile_face(captura)):
+                break
+            else:
+                os.remove(captura)
+        return captura

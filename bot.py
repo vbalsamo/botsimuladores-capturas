@@ -4,7 +4,6 @@ from descargar_capitulo import descargar_capitulo
 from auth import api
 from media import get_length, generar_aleatorio
 
-
 def post_frame():
     descargar_capitulo()
 
@@ -16,8 +15,8 @@ def post_frame():
     captura = generar_aleatorio(path_new, duracion)
 
     media = api.media_upload(captura)
-    api.update_status(status = '', media_ids=[media.media_id]) #tweet screenshot
-    os.remove(captura) #remove screenshot
+    api.update_status(status = '', media_ids=[media.media_id])
+    os.remove(captura)
 
 print("Twitteando captura...")
 post_frame()
