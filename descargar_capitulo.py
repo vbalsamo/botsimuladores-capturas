@@ -39,5 +39,3 @@ def descargar_capitulo():
     url = capitulo.url
     output = 'capitulos/' + capitulo.nombre
     gdown.download(url, output, quiet=False)
-
-descargar_capitulo()
