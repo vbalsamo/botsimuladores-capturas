@@ -28,7 +28,7 @@ jobs:
               
       - name: Twittear
         env:
-        LINK_C1: ${{ secrets.LINK_C1 }}
+          LINK_C1: ${{ secrets.LINK_C1 }}
           LINK_C2: ${{ secrets.LINK_C2 }}
           LINK_C3: ${{ secrets.LINK_C3 }}
           LINK_C4: ${{ secrets.LINK_C4 }}
