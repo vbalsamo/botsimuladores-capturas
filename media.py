@@ -24,7 +24,7 @@ def nombreSubtitulos(filename):
     return subtitlePath
 
 def generar_aleatorio(path_new, duracion):
-    i = 4
+    i = random.randint(1,6)
     if i == 1:
         generate_thumbnail(path_new, 'captura.png', duracion)
         return 'captura.png'
