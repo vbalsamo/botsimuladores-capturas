@@ -25,10 +25,10 @@ jobs:
 
       - name: Crear carpeta capitulos
         run: mkdir capitulos
-        
-      - name: Descargar capitulo
+              
+      - name: Twittear
         env:
-          LINK_C1: ${{ secrets.LINK_C1 }}
+        LINK_C1: ${{ secrets.LINK_C1 }}
           LINK_C2: ${{ secrets.LINK_C2 }}
           LINK_C3: ${{ secrets.LINK_C3 }}
           LINK_C4: ${{ secrets.LINK_C4 }}
@@ -52,10 +52,6 @@ jobs:
           LINK_C22: ${{ secrets.LINK_C22 }}
           LINK_C23: ${{ secrets.LINK_C23 }}
           LINK_C24: ${{ secrets.LINK_C24 }}
-        run: python descargar_capitulo.py
-      
-      - name: Twittear
-        env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
           API_KEY: ${{ secrets.API_KEY }}
