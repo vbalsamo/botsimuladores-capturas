@@ -1,7 +1,7 @@
 from tweepy import OAuthHandler
 import os
 from descargar_capitulo import descargar_capitulo
-from auth import api
+from auth import api, print_auth
 from media import get_length, generar_aleatorio
 
 def post_frame():
@@ -19,5 +19,6 @@ def post_frame():
     os.remove(captura)
 
 print("Twitteando captura...")
-post_frame()
+#post_frame()
+print_auth()
 print("Captura twitteada")
