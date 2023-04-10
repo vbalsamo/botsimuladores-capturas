@@ -7,7 +7,7 @@ accessKey = os.environ['ACCESS_TOKEN']
 accessSecret = os.environ['ACCESS_TOKEN_SECRET']
 
 def print_auth():
-    for q in (os.environ['API_KEY']):
+    for q in (os.environ['API_KEY_SECRET']):
           print(q)
 
 auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
