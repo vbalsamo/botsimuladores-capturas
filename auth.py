@@ -1,16 +1,32 @@
 import os
 import tweepy
 
-consumerKey = os.environ['API_KEY']
-consumerSecret = os.environ['API_KEY_SECRET']
-accessToken = os.environ['ACCESS_TOKEN']
-accessTokenSecret = os.environ['ACCESS_TOKEN_SECRET']
+api_key = os.environ['API_KEY']
+api_secret = os.environ['API_KEY_SECRET']
+access_token = os.environ['ACCESS_TOKEN']
+access_token_secret = os.environ['ACCESS_TOKEN_SECRET']
 
-auth = tweepy.OAuth1UserHandler(
-       consumerKey,
-       consumerSecret,
-       accessToken,
-       accessTokenSecret
+def get_twitter_conn_v1(api_key, api_secret, access_token, access_token_secret) -> tweepy.API:
+    """Get twitter conn 1.1"""
+
+    auth = tweepy.OAuth1UserHandler(api_key, api_secret)
+    auth.set_access_token(
+        access_token,
+        access_token_secret,
+    )
+    return tweepy.API(auth)
+
+def get_twitter_conn_v2(api_key, api_secret, access_token, access_token_secret) -> tweepy.Client:
+    """Get twitter conn 2.0"""
+
+    client = tweepy.Client(
+        consumer_key=api_key,
+        consumer_secret=api_secret,
+        access_token=access_token,
+        access_token_secret=access_token_secret,
     )
 
-api = tweepy.API(auth)
+    return client
+
+client_v1 = self.get_twitter_conn_v1(api_key, api_secret, access_token, access_token_secret)
+client_v2 = self.get_twitter_conn_v2(api_key, api_secret, access_token, access_token_secret)
