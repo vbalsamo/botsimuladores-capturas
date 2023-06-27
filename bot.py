@@ -19,7 +19,7 @@ def post_frame():
     media = client_v1.media_upload(filename=media_path)
     media_id = media.media_id
 
-    client_v2.create_tweet(text="Tweet text", media_ids=[media_id])
+    client_v2.create_tweet(text="", media_ids=[media_id])
     
     #media = api.media_upload(captura)
     #api.update_status(status = '', media_ids=[media.media_id])
