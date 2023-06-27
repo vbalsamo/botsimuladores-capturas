@@ -1,7 +1,8 @@
 from tweepy import OAuthHandler
 import os
 from descargar_capitulo import descargar_capitulo
-from auth import api
+from auth import cilent_v1
+from auth import client_v2
 from media import get_length, generar_aleatorio
 
 def post_frame():
