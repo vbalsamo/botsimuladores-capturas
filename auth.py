@@ -28,5 +28,5 @@ def get_twitter_conn_v2(api_key, api_secret, access_token, access_token_secret) 
 
     return client
 
-client_v1 = self.get_twitter_conn_v1(api_key, api_secret, access_token, access_token_secret)
-client_v2 = self.get_twitter_conn_v2(api_key, api_secret, access_token, access_token_secret)
+client_v1 = get_twitter_conn_v1(api_key, api_secret, access_token, access_token_secret)
+client_v2 = get_twitter_conn_v2(api_key, api_secret, access_token, access_token_secret)
