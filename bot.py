@@ -14,8 +14,14 @@ def post_frame():
     duracion = get_length(path_new)
     captura = generar_aleatorio(path_new, duracion)
 
-    media = api.media_upload(captura)
-    api.update_status(status = '', media_ids=[media.media_id])
+    media_path = captura
+    media = client_v1.media_upload(filename=media_path)
+    media_id = media.media_id
+
+    client_v2.create_tweet(text="Tweet text", media_ids=[media_id])
+    
+    #media = api.media_upload(captura)
+    #api.update_status(status = '', media_ids=[media.media_id])
     os.remove(captura)
 
 print("Twitteando captura...")
